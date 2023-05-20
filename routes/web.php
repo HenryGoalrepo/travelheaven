@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/password',function(){
+   $pass=Hash::make('1234567890');
+   dd($pass);
+});
+
 Route::group(['prefix'=>'travelheaven','as'=>'travelheaven.'],function(){
      Route::get('home',[TravelController::class,'home'])->name('home');
 });
