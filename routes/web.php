@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Travel\AppArtisanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Travel\TravelController;
 /*
@@ -17,10 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/password',function(){
-   $pass=Hash::make('1234567890');
-   dd($pass);
-});
+
+
+Route::get('clear',[AppArtisanController::class,'initiate']);
 
 Route::group(['prefix'=>'travelheaven','as'=>'travelheaven.'],function(){
      Route::get('home',[TravelController::class,'home'])->name('home');
