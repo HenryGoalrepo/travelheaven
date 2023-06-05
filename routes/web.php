@@ -3,6 +3,7 @@
 use App\Http\Controllers\Travel\AppArtisanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Travel\TravelController;
+use App\Http\Controllers\TravelHavenAdmin\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,4 +31,8 @@ Route::group(['prefix'=>'travelheaven','as'=>'travelheaven.'],function(){
      Route::get('about',[TravelController::class,'about'])->name('about');
      Route::get('blog',[TravelController::class,'blogless'])->name('blog');
      Route::get('contact',[TravelController::class,'contact'])->name('contact');
+});
+
+Route::group(['prefix'=>'thadmin','as'=>'thadmin.'],function(){
+     Route::get('dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
 });
