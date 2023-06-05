@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "a49ef725bc77a3c948a1a25c63e032b6",
     "packages": [
         {
             "name": "brick/math",
@@ -60,6 +60,49 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "chatbots/chatbotblueprint",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HenryGoalrepo/chatbotBlueprint.git",
+                "reference": "e8297bf6ec6fb86db48a6539e069e2dab8c9d845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HenryGoalrepo/chatbotBlueprint/zipball/e8297bf6ec6fb86db48a6539e069e2dab8c9d845",
+                "reference": "e8297bf6ec6fb86db48a6539e069e2dab8c9d845",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ChatBot\\Blueprint\\ChatbotBluprintServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ChatBot\\Blueprint\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kumar-progress"
+                }
+            ],
+            "description": "This will give an overview of chatbot in laravel.with form and views that is required also databases",
+            "support": {
+                "issues": "https://github.com/HenryGoalrepo/chatbotBlueprint/issues",
+                "source": "https://github.com/HenryGoalrepo/chatbotBlueprint/tree/v1.0.1"
+            },
+            "time": "2023-05-24T05:39:52+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
