@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Travel\AppArtisanController;
+use App\Http\Controllers\TravelHavenApis\TravelHavenApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Travel\TravelController;
 use App\Http\Controllers\TravelHavenAdmin\DashboardController;
@@ -35,4 +36,6 @@ Route::group(['prefix'=>'travelheaven','as'=>'travelheaven.'],function(){
 
 Route::group(['prefix'=>'thadmin','as'=>'thadmin.'],function(){
      Route::get('dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
+     Route::get('filgthapiauth',[TravelHavenApiController::class,'getAuthrizationToken'])->name('flight-api-auth');
+     Route::get('filgthapi',[TravelHavenApiController::class,'searchFlightBetweenCity'])->name('flight-api');
 });
