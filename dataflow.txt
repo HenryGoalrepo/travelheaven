@@ -1,0 +1,33 @@
+places->things_to_see_and_do->1.Most_loved_place->Placesoverview
+                              2.Heritage->Placesoverview
+                              3.Food->Booking
+                              4.Resortsandstays->pacakges
+
+
+
+loop->day_plan
+
+foreach->plan->loop->include->foreach->value=hotel_then->hotel_block
+
+flight->hotel->transfer
+
+->5 day plan
+
+->flight->api->current->object->maxmium
+->algorithm->bussiness->1->object->sutitable->package
+->change->whole->object->call
+
+->hotel->api->current->object->maxmium
+->algorithm->business->1->object->suitable->package
+->change->whole->object->call
+
+
+
+
+
+
+
+
+
+
+
